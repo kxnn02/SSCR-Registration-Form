@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Registration Form</title>
+    <link rel="stylesheet" href="/college/college.css">
+</head>
+<body>
+    <nav class="nav-container">
+        <div class="logo-container">
+            <img src="/Images/sscr-header-logo-img.png" alt="SSCR-Logo">
+        </div>
+    </nav>
+
+    <section class="forms-container">
+        <header>College Registration Form</header>
+        <form action="#" class="form">
+            <div class="student-info-container">
+                <label for="course">Select College Program / Course*</label>
+                <select id="course" name="course" required>
+                    <option value="" disabled selected>Choose your program</option>
+                    <option value="BSIT">BSIT (Bachelor of Science in Information Technology)</option>
+                    <option value="BSCS">BSCS (Bachelor of Science in Computer Science)</option>
+                    <option value="BSBA">BSBA (Bachelor of Science in Business Administration)</option>
+                    <option value="BSA">BSA (Bachelor of Science in Accountancy)</option>
+                    <option value="BSCE">BSCE (Bachelor of Science in Civil Engineering)</option>
+                    <option value="BSEE">BSEE (Bachelor of Science in Electrical Engineering)</option>
+                    <option value="BSN">BSN (Bachelor of Science in Nursing)</option>
+                    <option value="BSED">BSED (Bachelor of Secondary Education)</option>
+                </select>
+
+                <label for="last-name">Last Name*</label>
+                <input type="text" id="last-name" name="last-name" required>
+
+                <label for="first-name">First Name*</label>
+                <input type="text" id="first-name" name="first-name" required>
+
+                <label for="middle-name">Middle Name</label>
+                <input type="text" id="middle-name" name="middle-name">
+                <div class="checkbox-container">
+                    <input type="checkbox" id="no-middle-name" name="no-middle-name">
+                    <label for="no-middle-name">No middle name</label>
+                </div>
+
+                <label for="suffix">Suffix</label>
+                <input type="text" id="suffix" name="suffix">
+                <div class="checkbox-container">
+                    <input type="checkbox" id="no-suffix" name="no-suffix">
+                    <label for="no-suffix">No suffix</label>
+                </div>
+
+                <label>Gender*</label>
+                <div class="gender-container">
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Female</label>
+                </div>
+
+                <label for="birthdate">Birthdate* (mm/dd/yyyy)</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+
+                <label for="mobile-number">Mobile Number*</label>
+                <input type="text" id="mobile-number" name="mobile-number" required>
+                <p class="note">Note: Use PHILIPPINES mobile number. Start your number from "9".</p>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email">
+                <p class="note">Email Address should be VALID and ACTIVE</p>
+
+                <button type="submit" class="submit-btn">Submit Pre-Registration Form</button>
+                <button type="reset" class="reset-btn">Reset Form</button>
+            </div>
+        </form>
+    </section>
+
+    <script src="/Registration Form/script.js"></script>
+</body>
+</html>
